@@ -16,9 +16,13 @@
 
 int main(int argc, char const *argv[])
 {
-	for (int i = 0; i <= 15; ++i)
+	int N;
+	printf("Enter N: ");
+	scanf("%d", &N );
+
+	for (int i = 0; i < N; ++i)
 	{
-		printf("%d\n",i );
+		printf("%d\n", 2*i+1 );
 	}
 	return 0;
 }

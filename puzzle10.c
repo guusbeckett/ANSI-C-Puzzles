@@ -16,9 +16,11 @@
 
 int main(int argc, char const *argv[])
 {
-	for (int i = 0; i <= 15; ++i)
+	for (int i = 0; i <= 24; ++i)
 	{
-		printf("%d\n",i );
+		printf("%3d",i);
+		if(i%5==4)
+			printf("\n");		
 	}
 	return 0;
 }

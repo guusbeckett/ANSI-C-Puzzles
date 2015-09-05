@@ -16,9 +16,20 @@
 
 int main(int argc, char const *argv[])
 {
-	for (int i = 0; i <= 15; ++i)
+	int N;
+	printf("Enter N: ");
+	scanf("%d", &N );
+	int sum = 0;
+	int sumOdd = 0;
+	int sumEven = 0;
+	for (int i = 1; i <= N; ++i)
 	{
-		printf("%d\n",i );
+		sum += i;
+		if(i%2)
+			sumOdd+=i;
+		else
+			sumEven+=i;
 	}
+	printf("Sum = %d, Sum of Odd = %d, Sum of Even = %d\n", sum, sumOdd, sumEven);
 	return 0;
 }
